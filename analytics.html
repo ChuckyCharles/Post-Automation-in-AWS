@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Analytics</title>
+    <link rel="stylesheet" href="analytics.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Social Media Analytics</h1>
+        <div class="filters">
+            <div class="form-group">
+                <label for="date-range">Select Date Range:</label>
+                <input type="date" id="start-date" name="start-date">
+                <input type="date" id="end-date" name="end-date">
+            </div>
+            <div class="form-group">
+                <label for="platform">Select Platform:</label>
+                <select id="platform" name="platform">
+                    <option value="all">All Platforms</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="linkedin">LinkedIn</option>
+                </select>
+            </div>
+            <button class="btn-filter" onclick="filterAnalytics()">Filter Analytics</button>
+        </div>
+        <div class="analytics-overview">
+            <h2>Overview</h2>
+            <div class="analytics-cards">
+                <div class="card">
+                    <h3>Total Posts</h3>
+                    <p id="total-posts">0</p>
+                </div>
+                <div class="card">
+                    <h3>Total Impressions</h3>
+                    <p id="total-impressions">0</p>
+                </div>
+                <div class="card">
+                    <h3>Total Engagements</h3>
+                    <p id="total-engagements">0</p>
+                </div>
+                <div class="card">
+                    <h3>Total Reach</h3>
+                    <p id="total-reach">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="detailed-analytics">
+            <h2>Detailed Analytics</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Post Content</th>
+                        <th>Date Posted</th>
+                        <th>Platform</th>
+                        <th>Impressions</th>
+                        <th>Engagements</th>
+                        <th>Reach</th>
+                    </tr>
+                </thead>
+                <tbody id="analytics-data">
+                    <!-- Data will be populated here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="analy.js"></script>
+</body>
+</html>

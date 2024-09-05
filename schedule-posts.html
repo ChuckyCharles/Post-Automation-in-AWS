@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Posts</title>
+    <link rel="stylesheet" href="schedule.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Schedule a Post</h1>
+        <form id="schedule-form" class="schedule-form">
+            <div class="form-group">
+                <label for="post-content">Post Content:</label>
+                <textarea id="post-content" name="post-content" rows="4" placeholder="What's on your mind?"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="post-image">Upload Image:</label>
+                <input type="file" id="post-image" name="post-image">
+            </div>
+            <div class="form-group">
+                <label for="schedule-date">Schedule Date:</label>
+                <input type="date" id="schedule-date" name="schedule-date">
+            </div>
+            <div class="form-group">
+                <label for="schedule-time">Schedule Time:</label>
+                <input type="time" id="schedule-time" name="schedule-time">
+            </div>
+            <div class="form-group">
+                <label for="social-accounts">Select Social Accounts:</label>
+                <select id="social-accounts" name="social-accounts" multiple>
+                    <option value="twitter">Twitter</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="instagram">Instagram</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-schedule">Schedule Post</button>
+            </div>
+        </form>
+        <div class="post-preview">
+            <h2>Post Preview</h2>
+            <p id="preview-content"></p>
+            <img id="preview-image" src="#" alt="Image Preview" style="display:none;">
+            <p id="preview-schedule"></p>
+        </div>
+    </div>
+    <script src="src.js"></script>
+</body>
+</html>
