@@ -1,0 +1,7 @@
+In the backened we are going to configure the following 
+
+ 1 . A host for the webserver/server environment  e.g. an ec2 instance
+ 2 . Install a web server in the created host to serve the backened application (nginx/Apache(
+ 3 . Use backened frameworks like flask for python to create RESTfUL APIs
+ 4 . Database setup ; configure database to store user data, scheduled post, and other necessary information.
+ 5 .Authentication; implement authentication mechanisms to secure the sessions and API requests.
